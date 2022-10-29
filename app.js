@@ -9,7 +9,7 @@
 // Event handling, user interaction is what starts the code execution.
 
 var taskInput = document.getElementById("new-task");//Add a new task.
-var addButton = document.getElementsByClassName(".button")[0];//first button
+var addButton = document.getElementsByClassName("button")[0];//first button
 var incompleteTaskHolder = document.getElementById("task__incomplete");//ul of #incompleteTasks
 var completedTasksHolder = document.getElementById("task__complete");//completed-tasks
 
@@ -42,12 +42,12 @@ var createNewTaskElement = function (taskString) {
     //Each elements, needs appending
     checkBox.type = "checkbox";
     editInput.type = "text";
-    editInput.className="task task_add-text";
+    editInput.className = "task task__add-text";
 
     editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="button button__edit";
+    editButton.className = "button button__edit";
 
-    deleteButton.className="button button__delete";
+    deleteButton.className = "button button__delete";
     deleteButtonImg.src = './remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -85,7 +85,7 @@ var editTask = function () {
 
     var listItem = this.parentNode;
 
-    var editInput = listItem.querySelector('input[type=text]');
+    var editInput = listItem.querySelector('.task__add-text');
     var label = listItem.querySelector(".task__label");
     var editBtn = listItem.querySelector(".button__edit");
     var containsClass = listItem.classList.contains("edit-mode");
@@ -157,7 +157,7 @@ addButton.addEventListener("click", ajaxRequest);
 var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
     console.log("bind list item events");
 //select ListItems children
-    var checkBox = taskListItem.querySelector("input[type=checkbox]");
+    var checkBox = taskListItem.querySelector(".checkbox");
     var editButton = taskListItem.querySelector(".button__edit");
     var deleteButton = taskListItem.querySelector(".button__delete");
 

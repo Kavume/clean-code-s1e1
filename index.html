@@ -8,24 +8,25 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen">
 </head>
-<body>
+<body class="body">
 <section class="section welcome-section">
     <img class="welcome-section__image" src="./eisenhower-matrix.jpg" alt="welcome image">
-    <a class="welcome-section__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <a class="welcome-section__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more
+        details?</a>
 </section>
 <section class="section main-section">
     <h3 class="title add-item__title">Add Item</h3>
     <div class="task__add">
         <label class="task__add-label" for="new-task"></label>
-        <input id="new-task" class="task task_add-text" type="text" name="add-task-name">
+        <input id="new-task" class="task task__add-text" type="text" name="add-task-name">
         <button class="button">Add</button>
     </div>
     <h3 class="title">Todo</h3>
     <ul class="task-item__wrap task__incomplete" id="task__incomplete">
         <li class="task-item">
             <input class="checkbox" type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task task_add-text">
+            <label class="task task__label">Pay Bills</label>
+            <input type="text" class="task task__add-text">
             <button class="button button__edit">Edit</button>
             <button class="button button__delete">
                 <img class="button__image" src="./remove.svg" alt="">
@@ -34,7 +35,7 @@
         <li class="task-item edit-mode">
             <input class="checkbox" type="checkbox">
             <label class="task task__label">Go Shopping</label>
-            <input class="task task_add-text" type="text" value="Go Shopping">
+            <input class="task task__add-text" type="text" value="Go Shopping">
             <button class="button button__edit">Save</button>
             <button class="button button__delete">
                 <img class="button__image" src="./remove.svg" alt="">
@@ -46,7 +47,7 @@
         <li class="task-item">
             <input class="checkbox" type="checkbox" checked>
             <label class="task task__label">See the Doctor</label>
-            <input class="task task_add-text" type="text">
+            <input class="task task__add-text" type="text">
             <button class="button button__edit">Edit</button>
             <button class="button button__delete">
                 <img class="button__image" src="./remove.svg" alt="">
@@ -54,6 +55,6 @@
         </li>
     </ul>
 </section>
-<script type="text/javascript"></script>
+<script src="app.js"></script>
 </body>
 </html>
