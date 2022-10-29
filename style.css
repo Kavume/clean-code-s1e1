@@ -5,28 +5,32 @@ body {
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+.section {
     width: 500px;
     margin: 0 auto;
     display: block;
+}
+
+.welcome-section {
     text-align: right;
 }
 
-.aaa img {
-    width: 100%;
-}
+@media (max-width: 768px) {
 
-.aaa .more_inf {
-    font-family: fantasy, cursive;
-}
-
-@media (max-width:768px) {
-
-    .aaa {
+    .welcome-section {
         text-align: center;
     }
 
 }
+
+.welcome-section img {
+    width: 100%;
+}
+
+.welcome-section .more_inf {
+    font-family: fantasy, cursive;
+}
+
 .centered-main-page-element {
     display: block;
     width: 500px;
@@ -45,7 +49,7 @@ body {
 
 ul {
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
 
 li,
@@ -60,7 +64,7 @@ button{
 
 button {
     background: none;
-    border: 0px;
+    border: 0;
     color: #888;
     font-size: 15px;
     width: 60px;
